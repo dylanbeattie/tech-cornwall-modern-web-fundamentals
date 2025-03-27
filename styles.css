@@ -1,0 +1,30 @@
+html {
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+	background-color: #000;
+	color: #fff;
+	padding: 8px;
+	text-align: center;
+	font-size: clamp(24px, 10vw, 32px);
+	height: clamp(32px, 8vw, 72px);
+}
+
+nav {
+	& a {
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			background-color: rgb(72,0,72);
+		}
+		display: inline-block;
+		border-radius: 4px;
+		padding: 4px;
+
+	}
+	background-color: purple;
+	color: #fff;
+	padding: 4px;
+	position: sticky;
+	top: 10px;
+}
