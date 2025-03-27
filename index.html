@@ -4,6 +4,7 @@
 	<title>Hello!</title>
 	<link type="text/css" rel="stylesheet"
 	href="styles.css" />
+	<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +16,16 @@
 		<a href="#">about</a>
 		<a href="#">contact</a>
 		<a href="#">photos</a>
+		<button id="settings-button">settings</button>
 	</nav>
+	<dialog id="settings-dialog">
+		<form method="dialog">
+			<label for="border-radius-input">Border Radius:</label>
+			<input type="range" id="border-radius-input"
+				min="0" max="50" />
+			<input type="submit" value="OK" />
+		</form>
+	</dialog>
 	<main>
 		<p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Donec commodo porta arcu. Ut facilisis arcu sed nisi
 			aliquet bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -83,7 +93,6 @@
 	<footer>
 		Copyright &copy; 2025 Dylan Beattie
 	</footer>
-	</fotter>
 </body>
 
 </html>

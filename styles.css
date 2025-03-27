@@ -1,27 +1,46 @@
-html {
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+:root {
+	--border-radius: 4px;
 }
+
+html {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 header {
+	border-radius: var(--border-radius);
 	background-color: #000;
 	color: #fff;
 	padding: 8px;
 	text-align: center;
 	font-size: clamp(24px, 10vw, 32px);
 	height: clamp(32px, 8vw, 72px);
+	margin-bottom: 8px;
 }
 
+::backdrop {
+	background-color: rgba(0,0,0,0.3);
+}
 nav {
+	& button {
+		float: right;
+		border-radius: var(--border-radius);
+	}
+	border-radius: var(--border-radius);
 	& a {
 		color: #fff;
 		text-decoration: none;
+
 		&:hover {
-			background-color: rgb(72,0,72);
+			background-color: rgb(72, 0, 72);
 		}
+
 		display: inline-block;
 		border-radius: 4px;
 		padding: 4px;
 
 	}
+
 	background-color: purple;
 	color: #fff;
 	padding: 4px;

@@ -8,4 +8,10 @@ Things to look at:
 * Viewport units
 * `<dialog>`
 * `position: sticky`
-*
+
+TODO:
+
+1: Button to open the settings dialog
+2: settings dialog
+3: way to change the border radius
+4 (???) save settings for next time?
